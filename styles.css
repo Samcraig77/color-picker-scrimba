@@ -1,0 +1,11 @@
+:root {
+    --dam: #111;
+
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+
+
