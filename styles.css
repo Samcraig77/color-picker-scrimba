@@ -13,25 +13,48 @@ body {
     flex-direction: column;
     font-family: 'Bebas Neue', sans-serif;
     margin: 0;
+    height: 99.6vmin;
 }
 
 nav {
-height: 5%;
-align-self: center;
-justify-self: center;
-align-items: center;
-justify-content: center;
-margin: auto;
+    display: flex;
+    height: 3%;
+    min-height: 30px;
+    align-self: center;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
 }
 
 .virtual-body {
     display: flex;
     flex-direction: column;
-    height: 96vh;
+    height: 96.6vmin;
+    min-height: 600px;
 
     .virtual-nav {
         height:  5%;
-        background-color: blue;
+        background-color: black;
     }
 
+    .virtual-main {
+        background-color: grey;
+        height: 100%;
+    }
+
+    .virtual-bubble {
+        background-color: white;
+        display: flex;
+        min-height: 300px;
+        height: 90%;
+        margin: 3% 15%;
+
+        .virtual-text{
+            color: black;
+            align-self: center;
+            justify-self: center;
+            margin: auto;
+        }
+    }
 }
