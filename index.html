@@ -11,24 +11,21 @@
     <title>Sam's Color Picker</title>
 </head>
 <body>
-    <nav>
+    <nav class="nav">
         <input type="color" id="color-picker" />
         <label for="color-picker">Color: 
             <span id="color-chosen"><!-- getColor() value here --></span>
         </label>
     </nav>
-    <main class="colors-container">
-        <div class="virtual-body">
-            <div class="virtual-nav"></div>
+    <div class="virtual-body">
+        <div class="virtual-nav" id="virtual-nav">Nav text</div>
             
-            <div class="virtual-main">
-                <div class="virtual-bubble">
-                    
-                    <!-- <p class="virtual-words"></p> -->
-                </div>
+        <div class="virtual-main" id="virtual-main">
+            <div class="virtual-bubble" id="virtual-bubble">
+                <p class="virtual-text" id="virtual-text"> Oh, hello there</he></p> 
             </div>
         </div>
-    </main>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
