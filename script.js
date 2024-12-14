@@ -27,8 +27,7 @@ function getColor(event) {
         virtualMain.style.backgroundColor = fullColorHexArray[18]
         virtualBubble.style.backgroundColor = fullColorHexArray[35]
         virtualText.style.color = fullColorHexArray[0]
-        // placeholderPosts.style.border = `2px solid black`
-   })
+    })
 
    
 }
@@ -40,6 +39,8 @@ function getPlaceholders(number) {
     .then(res => res.json())
     .then(data => {
         const postsArray = data.slice(0, 3)
+        
+        
 
         virtualText.innerHTML = postsArray.map(post => 
             `<article class="placeholder-post">
