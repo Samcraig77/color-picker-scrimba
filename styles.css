@@ -14,16 +14,32 @@ body {
     font-family: 'Bebas Neue', sans-serif;
     margin: 0;
     height: 100vh;
+    min-height: none;
+}
+
+.right-aligned {
+    display: flex;
+    margin: auto 0 auto auto;
+    gap: 10px
 }
 
 .nav {
     display: flex;
-    max-height: 30px;
+    min-height: 60px;
     align-items: center;
-    margin: 1em;
+    margin: 0 1em;
 
-    .color-picker {
-        margin: 1em;
+    .color-input-div {
+        margin: 0 1em;
+    }
+
+    .options-div {
+        
+        align-items: center;
+    }
+
+    .placeholder-posts-number {
+        width: 4em;
     }
 }
 
@@ -31,11 +47,10 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
-    min-height: 600px;
 
     .virtual-nav {
         display: flex;
-        padding: 0 1em;
+        padding: 1em;
         height:  5%;
         background-color: black;
         color: white;
@@ -44,19 +59,30 @@ body {
 
     .virtual-main {
         background-color: grey;
-        height: inherit;
+        min-height: fit-content;
     }
 
     .virtual-content {
         background-color: white;
         display: flex;
-        min-height: 300px;
-        height: 90%;
         margin: 3% 15%;
 
         .virtual-text{
             color: black;
             margin: 1em;
+
+            .placeholder-post {
+                padding: 10px;
+
+                &:hover {
+                border-radius: 10px;
+                box-shadow: 2px 2px 10px black;
+                }
+            }
+
+            hr {
+                border: 2px black solid;
+            }
         }
     }
 }
