@@ -15,18 +15,18 @@
         <nav class="nav">
             <div class="color-input-div">
                 <input type="color" class="color-picker" id="color-picker" value="#00000"/>
-                <label for="color-picker">Color: 
-                    <span id="color-chosen"><!-- getColor() value here --></span>
+                <label for="color-picker">Main Color: 
+                    <span id="color-chosen">#00000 => Tundora<!-- getColor() value here --></span>
                 </label>
             </div>
             <div class="options-div right-aligned">
                 <h2 class="options-h2">Options:</h2>
-                <label for="placeholder-posts-number">Number of Placeholder Posts: </label>
-                <input type="number" class="placeholder-posts-number" id="placeholder-posts-number" value="5">
+                <label for="placeholder-posts-number">Number of Posts: <span id="placeholder-range-value"></span></label>
+                <input type="range" class="placeholder-posts-number" id="placeholder-posts-number" value="5" min="1" max="50">
             </div>
         </nav>
         <main class="virtual-body">
-            <div class="virtual-nav" id="virtual-nav">Nav text<span class="right-aligned" id="nav-color"></span></div>
+            <div class="virtual-nav" id="virtual-nav"><p>Nav text color: <span id="nav-text-color"> </span></p><span class="right-aligned" id="nav-color"></span></div>
                 
             <div class="virtual-main" id="virtual-main">
                 <div class="virtual-content" id="virtual-content">
